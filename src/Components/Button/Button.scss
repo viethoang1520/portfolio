@@ -1,0 +1,17 @@
+.contact-btn {
+  width: 258px;
+  background-color: #ffc200;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 3px;
+  color: #242527  ;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 0.05s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 90%;
+    // transform: scale(1.02);
+  }
+}

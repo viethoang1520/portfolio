@@ -1,0 +1,44 @@
+.contact-block {
+  background-color: #18191b;
+  color: #fff;
+  padding: 18px 0 100px 0;
+
+  .contact {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-title {
+      font-size: 27px;
+      font-weight: 700;
+      padding: 60px 0;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+
+      .title-color {
+        color: #ffc200;
+      }
+    }
+
+    .input-block {
+      padding: 0 0 30px 0;
+    }
+
+    .input-element {
+      color: #fff;
+      background-color: inherit;
+      border: none;
+      outline: none;
+      box-shadow: 0px 1px 3px #ffb500;
+    }
+
+    .input-element::placeholder,
+    .input-element textarea::placeholder {
+      color: #b7b5b5;
+    }
+  }
+}

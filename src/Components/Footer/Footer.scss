@@ -1,0 +1,25 @@
+.footer-block {
+  height: 70px;
+  width: 100%;
+  background-color: #ffc200;
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .button-up{
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px gray;
+    }
+    .button-up:hover{
+      background-color: #f2f2f2;
+    }
+  }
+}

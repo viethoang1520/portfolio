@@ -1,0 +1,19 @@
+.project-block {
+  background-color: #18191b;
+  text-align: center;
+  color: #fff;
+
+  .project-title {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0 70px 0;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    .project-title-color{
+      color: #ffc200;
+    }
+  }
+}
+

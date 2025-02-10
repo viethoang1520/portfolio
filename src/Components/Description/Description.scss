@@ -1,0 +1,22 @@
+.desc-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+  background-color: #18191b;
+  .title{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 0 12px 0;
+  }
+  .content{
+    width: 55%;
+    color: #b7b5b5;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  
+}
