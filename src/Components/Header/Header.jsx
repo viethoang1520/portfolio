@@ -1,5 +1,6 @@
 import { Switch } from 'antd';
 import './Header.scss'
+import { Icon } from '@iconify/react/dist/iconify.js';
 import('./Header.scss')
 function Header() {
   return (
@@ -15,8 +16,8 @@ function Header() {
         <a href='#contact'><li className='navbar-items'>CONTACT</li></a>
       </ul>
       <div className="right-block">
-        <Switch defaultChecked  />
-
+        <Icon className='toggle-icon' icon="material-symbols:light-mode" width="25" height="25" />
+        <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
       </div>
     </div>
 
