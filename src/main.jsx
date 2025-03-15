@@ -10,9 +10,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GlobalStyles>
       <Provider store={store}>
-        <ConfigProvider theme={{algorithm: 'dark'}}>
           <App />
-        </ConfigProvider>
       </Provider>
     </GlobalStyles>
   </StrictMode>,
