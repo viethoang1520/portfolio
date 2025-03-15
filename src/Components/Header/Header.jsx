@@ -9,7 +9,7 @@ function Header() {
   const handleToggle = () => {
     dispatch(toggle());
   };
-  const theme = useSelector((state) => state);
+  const theme = useSelector((state) => state.theme.theme);
   console.log(theme);
   return (
     <div className="header">
@@ -23,9 +23,11 @@ function Header() {
         <a href='#contact'><li className='navbar-items'>CONTACT</li></a>
       </ul>
       <div onClick={handleToggle} className="right-block">
-
-        <Icon className='toggle-icon' icon="material-symbols:light-mode" width="25" height="25" />
-        <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
+        {theme === 'light-theme' ?(
+          <Icon className='toggle-icon' icon="material-symbols:light-mode" width="25" height="25" />
+        ) : (
+          <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
+        )}
       </div>
     </div>
 
