@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import skills from '../../data/skills';
-import SkillCard from '../../Components/SkillCard/SkillCard';
+import SkillCard from '../../../../openai-agents-python/SkillCard/SkillCard';
 import('./SkillPage.scss')
 function SkillPage() {
   return (
