@@ -37,7 +37,7 @@ function Hero() {
             <h5 className="desc-content">"Welcome to my portfolio! My name is Viet Hoang, and I am currently a student at FPT University, where I am dedicated to expanding my knowledge and skills in various fields. I am always eager to learn and embrace new challenges, as I believe that personal growth comes from stepping outside of my comfort zone."</h5>
           </div>
           <Link>
-            <Button onClick={handleDownloadCV} content='Download CV' width='190px' height='50px' />
+            <Button onClick={handleDownloadCV} content='Download CV' width='190px' height='50px' icon='material-symbols:download' />
           </Link>
         </Col>
       </Row>
