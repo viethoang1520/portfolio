@@ -17,10 +17,10 @@ function Header() {
        Portfolio.
       </div>
       <ul className="navbar-list">
-        <a href='#introduction'><li className='navbar-items'>HOME</li></a>
-        <a href='#skill'><li className='navbar-items'>SKILLS</li></a>
-        <a href='#projects'><li className='navbar-items'>PROJECTS</li></a>
-        <a href='#contact'><li className='navbar-items'>CONTACT</li></a>
+        <a href='#introduction'><li className='navbar-items'>Home</li></a>
+        <a href='#skill'><li className='navbar-items'>Skills</li></a>
+        <a href='#projects'><li className='navbar-items'>Projects</li></a>
+        <a href='#contact'><li className='navbar-items'>Contact</li></a>
       </ul>
       <div onClick={handleToggle} className="right-block">
         {theme === 'light-theme' ?(
