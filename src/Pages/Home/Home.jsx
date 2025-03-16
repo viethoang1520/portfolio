@@ -1,8 +1,8 @@
-import Contact from "../../Components/Contact/Contact";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
-import Hero from "../../Components/Hero/Hero";
-import Project from "../../Components/Project/Project";
+import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
+import Hero from "../../components/Hero/Hero";
+import Project from "../../components/Project/Project";
 import SkillPage from "../Skill/SkillPage";
 
 function Home() {

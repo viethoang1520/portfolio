@@ -1,12 +1,12 @@
 import { Row, Col } from 'antd'
 import './Hero.scss'
-import Button from '../Button/Button';
+import Button from '../../components/Button/Button';
 import { Image } from 'antd';
 import image from '../../assets/images/avatar.jpg'
 import cv from '../../assets/cv.pdf'
 function Hero() {
   return (
-    <div  className="hero">
+    <div className="hero">
       <Row className='container hero-block'>
         <Col data-aos="fade-up" data-aos-delay="100" sm={12} md={12} lg={10} xl={10} className='image-block'>
           <Image
