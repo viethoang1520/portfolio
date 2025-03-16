@@ -3,12 +3,24 @@
   padding: 0 200px 50px 200px;
 
   .skill-title {
-    color: #fff;
-    padding: 40px 0;
-    font-size: 27px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
+    padding: 100px 0 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffd700;
+    text-align: center;
+
+    .skill-title-underline{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .skill-title-underline-line{
+        width: 8%;
+        height: 3px;
+        margin: 14px 0;
+        background-color: #ffd700;
+        border-radius: 10px;
+      }
+    }
   }
 
   @media screen and (max-width: 1200px) {
