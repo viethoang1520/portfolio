@@ -2,7 +2,6 @@ import { Row, Col } from 'antd'
 import './Hero.scss'
 import Button from '../Button/Button';
 import { Image } from 'antd';
-import { Link } from 'react-router-dom';
 import image from '../../assets/images/avatar.jpg'
 import cv from '../../assets/cv.pdf'
 function Hero() {
@@ -36,9 +35,9 @@ function Hero() {
           <div className="description">
             <h5 className="desc-content">"Welcome to my portfolio! My name is Viet Hoang, and I am currently a student at FPT University, where I am dedicated to expanding my knowledge and skills in various fields. I am always eager to learn and embrace new challenges, as I believe that personal growth comes from stepping outside of my comfort zone."</h5>
           </div>
-          <Link>
+          <a href={cv} download='Đinh Việt Hoàng-NodeJS_Devloper.pdf'>
             <Button onClick={handleDownloadCV} content='Download CV' width='185px' height='45px' icon='material-symbols:download' />
-          </Link>
+          </a>
         </Col>
       </Row>
     </div>
