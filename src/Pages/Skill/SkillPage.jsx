@@ -5,6 +5,7 @@ import './SkillPage.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { showAllSkills, collapseSkills } from '../../store/skill/skillSlice';
 import { useEffect, useState } from 'react';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 function SkillPage() {
   const dispatch = useDispatch();
@@ -14,16 +15,11 @@ function SkillPage() {
   useEffect(() => {
     if (showAll) {
       setSkills(originalSkills);
-      console.log("Show all được thực hiện")
-      console.log("Có " + originalSkills.length + " skills")
     } else {
       setSkills(originalSkills.slice(0, 8));
-      console.log("Slice được thực hiện")
-      console.log("Có " + originalSkills.slice(0, 8).length + " skills")
     }
   }, [showAll]);
 
-  console.log("Tóm lại có " + skills.length + " skills")
   return (
     <div className="skill-block" id='skill'>
       <div className="container">
@@ -44,9 +40,19 @@ function SkillPage() {
               />
             </Col>
           ))}
-          {showAll ? 
-            <button onClick={() => dispatch(collapseSkills(originalSkills))}>Show less</button>:
-            <button onClick={() => dispatch(showAllSkills(originalSkills))}>Show more</button> 
+          {showAll ? (
+              <Icon
+                onClick={() => dispatch(collapseSkills(originalSkills))}
+                className={"skill-collapse-icon"}
+                icon="lets-icons:expand-up-double"
+              />
+            ) : (
+              <Icon
+                onClick={() => dispatch(showAllSkills(originalSkills))}
+                className={"skill-expand-icon"}
+                icon="lets-icons:expand-down-double"
+              />
+            )
           }
         </Row>
       </div>
