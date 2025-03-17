@@ -7,7 +7,13 @@ function Project() {
   return (
     <div className="project-block">
       <div className="container">
-        <h1 className="project-title"><b>FEATURED</b><b className="project-title-color">PROJECTS</b></h1>
+        <div className="project-title-container">
+          <div data-aos="zoom-in-up" className="project-title">
+            <b className="project-title">FEATURED</b>
+            <b className="project-title-color">PROJECTS</b>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-delay="100" className="project-title-line"></div>
+        </div>
         <Row gutter={[16, 16]}>
           {projects.map((project, index) => (
             <Col key={index} xs={12} sm={12} md={12} lg={12} xl={12}>

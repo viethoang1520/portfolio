@@ -69,7 +69,7 @@ function SkillPage() {
               />
             </Col>
           ))}
-          <div className="skill-size-icon">
+          <div data-aos="zoom-in-up" data-aos-delay={`${skills.length}00`} className="skill-size-icon">
             {showAll ? (
               <motion.div
                 animate={{
