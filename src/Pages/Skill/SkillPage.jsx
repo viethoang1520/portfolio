@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { showAllSkills, collapseSkills } from '../../store/skill/skillSlice';
 import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { motion } from 'framer-motion';
 
 function SkillPage() {
   const dispatch = useDispatch();
@@ -20,6 +21,34 @@ function SkillPage() {
     }
   }, [showAll]);
 
+  const handleShowAllSkills = () => { 
+    dispatch(showAllSkills(originalSkills));
+    setTimeout(() => {
+      const skillSection = document.getElementById('skill');
+      if (skillSection) {
+        const sectionBottom = skillSection.getBoundingClientRect().bottom;
+        window.scrollBy({
+          top: sectionBottom - window.innerHeight + 100, 
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
+  }
+
+  const handleCollapseSkills = () => {
+    dispatch(collapseSkills(originalSkills));
+    setTimeout(() => {
+      const skillSection = document.getElementById('skill');
+      if (skillSection) {
+        // Scroll to the top of the skill section
+        skillSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start' // Align the top of the element with the top of the viewport
+        });
+      }
+    }, 100);
+  }
+  
   return (
     <div className="skill-block" id='skill'>
       <div className="container">
@@ -40,20 +69,45 @@ function SkillPage() {
               />
             </Col>
           ))}
-          {showAll ? (
-              <Icon
-                onClick={() => dispatch(collapseSkills(originalSkills))}
-                className={"skill-collapse-icon"}
-                icon="lets-icons:expand-up-double"
-              />
+          <div className="skill-size-icon">
+            {showAll ? (
+              <motion.div
+                animate={{
+                  y: [0, 10, 0],
+                  transition: {
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  },
+                }}
+              >
+                <Icon
+                  onClick={handleCollapseSkills}
+                  className={"skill-collapse-icon"}
+                  icon="lets-icons:expand-up-double"
+                />
+              </motion.div>
             ) : (
-              <Icon
-                onClick={() => dispatch(showAllSkills(originalSkills))}
-                className={"skill-expand-icon"}
-                icon="lets-icons:expand-down-double"
-              />
+                <motion.div
+                  animate={{
+                    // Move vertically: start at 0, go up -10px, return to 0
+                    y: [0, -10, 0],
+                    transition: {
+                      duration: 2, // Animation takes 2 seconds
+                      repeat: Infinity, // Repeat forever
+                      repeatType: "reverse", // When animation reaches end, it reverses direction back to start, creating a smooth back-and-forth motion
+                    },
+                  }}
+                >
+                <Icon
+                  onClick={handleShowAllSkills}
+                  className={"skill-expand-icon"}
+                  icon="lets-icons:expand-down-double"
+                />
+              </motion.div>
             )
           }
+          </div>
         </Row>
       </div>
     </div>

@@ -2,6 +2,13 @@
   background-color: #18191b;
   padding: 0 200px 50px 200px;
 
+  .skill-size-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+  }
   .skill-collapse-icon, .skill-expand-icon {
     cursor: pointer;
     color: #ffd700;
@@ -9,7 +16,6 @@
     width: 50px;
     height: 50px;
   }
-
   .skill-title {
     padding: 100px 0 40px;
     font-size: 20px;
