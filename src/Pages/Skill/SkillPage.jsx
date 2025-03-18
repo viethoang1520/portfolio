@@ -1,9 +1,9 @@
 import { Col, Row } from 'antd';
-import originalSkills from '../../data/skills';
-import SkillCard from '../../components/SkillCard/SkillCard';
+import originalSkills from '@/data/skills';
+import SkillCard from '@/components/SkillCard/SkillCard';
 import './SkillPage.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { showAllSkills, collapseSkills } from '../../store/skill/skillSlice';
+import { showAllSkills, collapseSkills } from '@/store/skill/skillSlice';
 import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { motion } from 'framer-motion';

@@ -1,9 +1,9 @@
 import { Row, Col } from 'antd'
 import './Hero.scss'
-import Button from '../../components/Button/Button';
+import Button from '@/components/Button/Button';
 import { Image } from 'antd';
-import image from '../../assets/images/avatar.jpg'
-import cv from '../../assets/cv.pdf'
+import image from '@/assets/images/avatar.jpg'
+import cv from '@/assets/cv.pdf'
 function Hero() {
   return (
     <div className="hero">

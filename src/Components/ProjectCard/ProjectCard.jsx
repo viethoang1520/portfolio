@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import { Image } from 'antd';
-import portfolio from '../../assets/images/portfolio.png'
+import portfolio from '@/assets/images/portfolio.png'
 
 function ProjectCard() {
   return (
