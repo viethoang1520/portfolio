@@ -1,6 +1,6 @@
 import { Row, Col } from 'antd'
 import './Hero.scss'
-import Button from '@/components/Button/Button';
+import Button from '@/components/Button/Button.jsx'
 import { Image } from 'antd';
 import image from '@/assets/images/avatar.jpg'
 import cv from '@/assets/cv.pdf'

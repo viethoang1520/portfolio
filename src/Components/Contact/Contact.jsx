@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.scss'
-import Button from '@/components/Button/Button'
+import Button from '@/components/Button/Button.jsx'
 import { Col, Input, Row } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
 import { Link } from 'react-router-dom'

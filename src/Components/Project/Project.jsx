@@ -1,6 +1,6 @@
 import { Col, Row } from "antd";
 import projects from "@/data/projects";
-import ProjectCard from "@/components/ProjectCard/ProjectCard"
+import ProjectCard from "@/components/ProjectCard/ProjectCard.jsx"
 import './Project.scss'
 
 function Project() {

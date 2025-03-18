@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import originalSkills from '@/data/skills';
-import SkillCard from '@/components/SkillCard/SkillCard';
+import SkillCard from '@/components/SkillCard/SkillCard.jsx';
 import './SkillPage.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { showAllSkills, collapseSkills } from '@/store/skill/skillSlice';
