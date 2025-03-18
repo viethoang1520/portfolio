@@ -11,16 +11,30 @@
     justify-content: center;
     align-items: center;
 
-    .contact-title {
-      font-size: 27px;
-      font-weight: 700;
-      padding: 60px 0;
+    .contact-title-container {
+      width: 100%;
       display: flex;
-      justify-content: center;
-      gap: 8px;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 0;
 
-      .title-color {
-        color: #ffc200;
+      .contact-title {
+        font-size: 22px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+  
+        .title-color {
+          color: #ffd700;
+        }
+      }
+      .contact-title-line {
+        width: 10%;
+        height: 3px;
+        background-color: #ffd700;
+        border-radius: 10px;
+        margin: 14px 0 0 0;
       }
     }
 
