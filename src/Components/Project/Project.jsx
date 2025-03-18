@@ -24,10 +24,12 @@ function Project() {
           ))}
         </Row> */}
         <Row gutter={[32, 32]}>
-          <Col data-aos="fade-right" data-aos-delay="00" xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col className="project-card-container" data-aos="fade-right" data-aos-delay="00" xs={24} sm={24} md={12} lg={12} xl={12}>
+            <ProjectCard />
             <ProjectCard />
           </Col>
-          <Col data-aos="fade-left" data-aos-delay="00" style={{ marginTop: '150px' }} xs={24} sm={24} md={12} lg={12} xl={12}>
+          <Col className="project-card-container" data-aos="fade-left" data-aos-delay="00" style={{ marginTop: '150px' }} xs={24} sm={24} md={12} lg={12} xl={12}>
+            <ProjectCard />
             <ProjectCard />
           </Col>
         
