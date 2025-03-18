@@ -14,14 +14,23 @@ function Project() {
           </div>
           <div data-aos="zoom-in-up" data-aos-delay="100" className="project-title-line"></div>
         </div>
-        <Row gutter={[16, 16]}>
+        {/* <Row>
           {projects.map((project, index) => (
-            <Col key={index} xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Col key={index} >
               <ProjectCard
                 project={project}
               />
             </Col>
           ))}
+        </Row> */}
+        <Row gutter={[32, 32]}>
+          <Col data-aos="fade-right" data-aos-delay="00" xs={24} sm={24} md={12} lg={12} xl={12}>
+            <ProjectCard />
+          </Col>
+          <Col data-aos="fade-left" data-aos-delay="00" style={{ marginTop: '150px' }} xs={24} sm={24} md={12} lg={12} xl={12}>
+            <ProjectCard />
+          </Col>
+        
         </Row>
       </div>
     </div>

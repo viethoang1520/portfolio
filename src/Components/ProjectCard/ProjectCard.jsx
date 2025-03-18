@@ -2,8 +2,10 @@ import './ProjectCard.scss'
 import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
+import { Image } from 'antd';
+import portfolio from '../../assets/images/portfolio.png'
 
-function ProjectCard({ project }) {
+function ProjectCard() {
   return (
     // <div className="project-card">
     //   <h1 className="name">{project.name}</h1>
@@ -26,7 +28,9 @@ function ProjectCard({ project }) {
     // </div >
     <div className='project-card-container'>
       <div className="project-card">
-        
+        <div className='project-card-image-container'>  
+          <Image src={portfolio} alt="portfolio" />
+        </div>
       </div>
     </div>
   );
