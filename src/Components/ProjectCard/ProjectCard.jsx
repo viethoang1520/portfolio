@@ -7,6 +7,13 @@ import portfolio from '@/assets/images/portfolio.png'
 import Tech from './Tech/Tech'
 
 function ProjectCard() {
+  const techs = [
+    'ReactJS',
+    'TypeScript', 
+    'Tailwind CSS',
+    'NestJS',
+    'MongoDB',
+  ]
   return (
     // <div className="project-card">
     //   <h1 className="name">{project.name}</h1>
@@ -41,11 +48,9 @@ function ProjectCard() {
         </div>
         <div className="project-card-tech">
           <ul className='project-card-tech-list'>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-            <li>React Router</li>
-            <li>React Hook Form</li>
+            {techs.map((tech, index) => (
+              <Tech key={index} techName={tech} />
+            ))}
             </ul>
           </div>
         </div>

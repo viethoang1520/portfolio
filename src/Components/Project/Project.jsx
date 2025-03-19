@@ -4,13 +4,6 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard.jsx"
 import './Project.scss'
 
 function Project() {
-  const techs = [
-    'React',
-    'TypeScript', 
-    'Tailwind CSS',
-    'NestJS',
-    'MongoDB',
-  ]
   return (
     <div className="project-block">
       <div className="container">
