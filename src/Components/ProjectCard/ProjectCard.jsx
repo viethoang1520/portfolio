@@ -31,6 +31,21 @@ function ProjectCard() {
         <div className='project-card-image-container'>  
           <Image src={portfolio} alt="portfolio" />
         </div>
+        <div className="project-card-title">
+          <h1>My Portfolio</h1>
+        </div>
+        <div className="project-card-desc">
+          <p>This is my portfolio website that I created using React, TypeScript, and Tailwind CSS. It is a simple and clean portfolio website that showcases my projects and skills.</p>
+        </div>
+        <div className="project-card-tech">
+          <ul className='project-card-tech-list'>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>React Router</li>
+            <li>React Hook Form</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

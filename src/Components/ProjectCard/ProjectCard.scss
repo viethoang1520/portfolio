@@ -62,5 +62,29 @@
       height: 100%;
       background-color: #242527;
     }
+
+    .project-card-title{
+      padding: 20px 0;
+      h1{
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .project-card-desc{ 
+      p{
+        font-size: 16px;
+        text-align: start;
+        line-height: 2.2rem;
+      }
+    }
+    .project-card-tech{
+      padding: 20px 0;
+      .project-card-tech-list{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        
+      }
+    }
   }
 }
