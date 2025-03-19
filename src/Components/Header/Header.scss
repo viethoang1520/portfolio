@@ -5,11 +5,14 @@
   align-items: center;
   height: 70px;
   color: #fff;
-  background-color: #18191b;
+  // background-color: rgba(24, 25, 27, 0.8);
+  // background-color: #18191b;
   position: sticky;
   top: 0;
   z-index: 999;
   box-shadow: 0 1px 5px rgb(61, 61, 61);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   .logo-block{
     font-weight: 500;
     font-size: 18px;

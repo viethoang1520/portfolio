@@ -1,8 +1,9 @@
 .hero {
   padding: 50px;
+  margin-top: -70px;
   background-color: #242527;
   color: #fff;
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: flex;
   align-items: center;
   background-image: url('../../assets/images/dark-theme-background.svg');
@@ -10,7 +11,6 @@
   background-size: cover;
 
   .hero-block {
-
     .image-block {
       display: flex;
       justify-content: center;
@@ -26,9 +26,6 @@
       justify-content: center;
       gap: 20px;
       padding: 0 0 50px 60px;
-      // .download-cv {
-      //   padding: 10px 0 0;
-      // }
 
       .title-block {
         height: 100%;
