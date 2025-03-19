@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import { Image } from 'antd';
 import portfolio from '@/assets/images/portfolio.png'
+import Tech from './Tech/Tech'
 
 function ProjectCard() {
   return (
@@ -29,11 +30,12 @@ function ProjectCard() {
     <div className='project-card-container'>
       <div className="project-card">
         <div className='project-card-image-container'>  
-          <Image src={portfolio} alt="portfolio" />
+          <Image className='project-card-image' preview={false} src={portfolio} alt="portfolio" />
         </div>
-        <div className="project-card-title">
-          <h1>My Portfolio</h1>
-        </div>
+        <div className="project-card-content">
+          <div className="project-card-title">
+            <h1>My Portfolio</h1>
+          </div>
         <div className="project-card-desc">
           <p>This is my portfolio website that I created using React, TypeScript, and Tailwind CSS. It is a simple and clean portfolio website that showcases my projects and skills.</p>
         </div>
@@ -44,7 +46,8 @@ function ProjectCard() {
             <li>Tailwind CSS</li>
             <li>React Router</li>
             <li>React Hook Form</li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

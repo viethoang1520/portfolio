@@ -4,6 +4,13 @@ import ProjectCard from "@/components/ProjectCard/ProjectCard.jsx"
 import './Project.scss'
 
 function Project() {
+  const techs = [
+    'React',
+    'TypeScript', 
+    'Tailwind CSS',
+    'NestJS',
+    'MongoDB',
+  ]
   return (
     <div className="project-block">
       <div className="container">
@@ -14,16 +21,7 @@ function Project() {
           </div>
           <div data-aos="zoom-in-up" data-aos-delay="100" className="project-title-line"></div>
         </div>
-        {/* <Row>
-          {projects.map((project, index) => (
-            <Col key={index} >
-              <ProjectCard
-                project={project}
-              />
-            </Col>
-          ))}
-        </Row> */}
-        <Row gutter={[32, 32]}>
+        <Row gutter={[70, 70]}>
           <Col className="project-card-container" data-aos="fade-right" data-aos-delay="00" xs={24} sm={24} md={12} lg={12} xl={12}>
             <ProjectCard />
             <ProjectCard />

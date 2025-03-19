@@ -21,7 +21,7 @@
 //     height: 32px;
 //     font-size: 16px;
 //     text-align: start;
-//     line-height: 2.2rem;
+//     line -height: 2.2rem;
 //   }
 
 //   .tech-list {
@@ -57,10 +57,26 @@
 // }
 .project-card-container{
   .project-card{
+    width: 100%;
+    height: 100%;
+    background-color: #242527;
+    border-radius: 17px;
+    overflow: hidden;
+    // border: 1px solid #ffc200;
+    box-shadow: 0 0px 8px 0 #ffd700;
     .project-card-image-container{
       width: 100%;
       height: 100%;
       background-color: #242527;
+      border-radius: 17px;
+    }
+    .project-card-content{
+      padding: 10px 20px;
+      .project-card-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .project-card-title{
@@ -68,6 +84,7 @@
       h1{
         font-size: 20px;
         font-weight: 600;
+        color: #ffd700;
       }
     }
     .project-card-desc{ 
@@ -75,6 +92,7 @@
         font-size: 16px;
         text-align: start;
         line-height: 2.2rem;
+        color: #b7b5b5;
       }
     }
     .project-card-tech{
