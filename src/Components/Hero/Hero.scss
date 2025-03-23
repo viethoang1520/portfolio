@@ -15,9 +15,10 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      .avatar-image{
-        border-radius: 8px;
-      }
+
+      // .avatar-image {
+      //   border-radius: 8px;
+      // }
     }
 
     .introduction {
@@ -33,15 +34,17 @@
         flex-direction: column;
         justify-content: center;
         gap: 2.6rem;
+
         .lower-title {
           display: flex;
           gap: 13px;
-        } 
+        }
 
         .content {
           font-size: 40px;
           line-height: 33px;
           font-weight: 700;
+          
           &.style {
             color: #ffc200;
           }
@@ -58,8 +61,15 @@
           color: #b7b5b5;
           word-spacing: 4px;
           opacity: 0.85;
+          text-align: justify;   
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .introduction {
+      margin: 20px 0;
     }
   }
 }

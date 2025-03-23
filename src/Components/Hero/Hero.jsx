@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div className="hero">
       <Row className='container hero-block'>
-        <Col data-aos="fade-up" data-aos-delay="100" sm={12} md={12} lg={12} xl={12} className='image-block'>
+        <Col data-aos="fade-up" data-aos-delay="100" sm={24} md={24} lg={12} xl={12} className='image-block'>
           <Image
             className='avatar-image'
             preview={false}
@@ -16,7 +16,7 @@ function Hero() {
             src={image}
           />
         </Col>
-        <Col data-aos="fade-up" data-aos-delay="200" sm={12} md={12} lg={12} xl={12} className="introduction">
+        <Col data-aos="fade-up" data-aos-delay="200" sm={24} md={24} lg={12} xl={12} className="introduction">
           <div className="title-block">
             <h1 className='content upper-title'>Hi there👋, I'm Viet Hoang</h1>
             <div className="lower-title">

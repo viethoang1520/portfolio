@@ -31,6 +31,10 @@ function Header() {
           <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
         )}
       </div>
+
+      <div className='mobile-button'>
+        <button>Open</button>
+      </div>
     </header>
 
   );

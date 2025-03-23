@@ -13,6 +13,9 @@
   box-shadow: 0 1px 5px rgb(61, 61, 61);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+  .mobile-button {
+    display: none;
+  }
   .logo-block{
     font-weight: 500;
     font-size: 18px;
@@ -49,4 +52,16 @@
       } 
     }    
   }
+  @media screen and (max-width: 772px) {
+    .navbar-list{
+      display: none;
+    }
+    .right-block{
+      display: none;
+    }
+        .mobile-button {
+          display: flex;
+        }
+  }
+  
 } 
