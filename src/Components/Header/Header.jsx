@@ -21,7 +21,7 @@ function Header() {
       <ul className="navbar-list">
         <a href='#home'><li className={`navbar-items ${navbarSelected === 'Home' ? 'active' : ''}`} onClick={() => setNavbarSelected('Home')}>Home</li></a>
         <a href='#skill'><li className={`navbar-items ${navbarSelected === 'Skills' ? 'active' : ''}`} onClick={() => setNavbarSelected('Skills')}>Skills</li></a>
-        <a href='#projects'><li className={`navbar-items ${navbarSelected === 'Projects' ? 'active' : ''}`} onClick={() => setNavbarSelected('Projects')}>Projects</li></a>
+        <a href='#project'><li className={`navbar-items ${navbarSelected === 'Projects' ? 'active' : ''}`} onClick={() => setNavbarSelected('Projects')}>Projects</li></a>
         <a href='#contact'><li className={`navbar-items ${navbarSelected === 'Contact' ? 'active' : ''}`} onClick={() => setNavbarSelected('Contact')}>Contact</li></a>
       </ul>
       <div onClick={handleToggle} className="right-block">

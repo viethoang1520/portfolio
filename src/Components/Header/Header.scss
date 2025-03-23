@@ -13,55 +13,70 @@
   box-shadow: 0 1px 5px rgb(61, 61, 61);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+
   .mobile-button {
     display: none;
   }
-  .logo-block{
+
+  .logo-block {
     font-weight: 500;
     font-size: 18px;
     width: 10%;
   }
+
   .navbar-list {
     display: flex;
     gap: 60px;
-    a{
+
+    a {
       text-decoration: none;
       color: #fff;
       font-size: 16px;
       font-weight: 500;
     }
-    .navbar-items{
-      &.active{
+
+    .navbar-items {
+      &.active {
         color: #ffd700;
         font-weight: 700;
       }
-      &:hover{
+
+      &:hover {
         color: #ffd700;
       }
     }
   }
-  .right-block{
+
+  .right-block {
     width: 10%;
     display: flex;
     justify-content: flex-end;
-    .toggle-icon{
+
+    .toggle-icon {
       cursor: pointer;
-      &:hover{
+
+      &:hover {
         transform: scale(1.02);
         color: yellow;
-      } 
-    }    
+      }
+    }
   }
+
   @media screen and (max-width: 772px) {
-    .navbar-list{
+    .navbar-list {
       display: none;
     }
-    .right-block{
+
+    .right-block {
       display: none;
     }
-        .mobile-button {
-          display: flex;
-        }
+
+    .mobile-button {
+      display: flex;
+    }
   }
-  
-} 
+
+  #project {
+    scroll-margin-top: 80px;
+  }
+}

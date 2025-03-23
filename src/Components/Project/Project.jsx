@@ -8,7 +8,7 @@ function Project() {
   const [leftSideProjectList, setLeftSideProjectList] = useState(projects.slice(0, projectLength / 2));
   const [rightSideProjectList, setRightSideProjectList] = useState(projects.slice(projectLength / 2, projectLength));
   return (
-    <div className="project-block">
+    <div id="project" className="project-block">
       <div className="container">
         <div className="project-title-container">
           <div data-aos="zoom-in-up" className="project-title">

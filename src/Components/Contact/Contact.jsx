@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 export default function Contact() {
   return (
-    <div className="contact-block">
+    <div id='contact' className="contact-block">
       <div className='contact container'>
         <div className="contact-title-container">
           <h1 data-aos="zoom-in-up" className='contact-title'><p>CONTACT</p> <p className='title-color'>ME!</p></h1>
