@@ -19,6 +19,7 @@
   }
 
   .logo-block {
+    user-select: none;
     font-weight: 500;
     font-size: 18px;
     width: 10%;
@@ -36,6 +37,7 @@
     }
 
     .navbar-items {
+      user-select: none;
       &.active {
         color: #ffd700;
         font-weight: 700;
@@ -74,9 +76,5 @@
     .mobile-button {
       display: flex;
     }
-  }
-
-  #project {
-    scroll-margin-top: 80px;
   }
 }
