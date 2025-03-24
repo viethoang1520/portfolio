@@ -11,7 +11,7 @@ const projects = [
     description: "A React-based portfolio which is written using ReactJS, Ant Design, and SCSS",
     techs: ["ReactJS", "NodeJS", "Ant Design", "SCSS"],
     github: "https://github.com/",
-    link: "https://www.facebook.com/"
+    link: "https://viethoang.vercel.app/"
   },
   {
     name: "FPT Mentor",

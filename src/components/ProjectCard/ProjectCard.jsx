@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import { Image } from 'antd';
 import portfolio from '@/assets/images/portfolio.png'
+import hoangduong from '@/assets/images/hoangduong.jpg'
 import Tech from './Tech/Tech'
 
 function ProjectCard({ project }) {
