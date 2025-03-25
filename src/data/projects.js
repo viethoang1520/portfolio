@@ -21,10 +21,10 @@ const projects = [
     link: "https://www.facebook.com/"
   },
   {
-    name: "Captcha NRO",
-    description: "A website that solves CAPTCHAs ( forwards to an available third-party server for solving ) obtained by users from the game Ngoc Rong Online",
-    techs: ["ReactJS", "NodeJS", "GitHub"],
-    github: "https://github.com/",
+    name: "Alcohol E-commerce Website",
+    description: "A website that for selling alcohols",
+    techs: ["ReactJS", "NestJS", "Redux", "GitHub"],
+    github: "https://github.com/alcohol-website",
     link: "https://www.facebook.com/"
   },
 ]
