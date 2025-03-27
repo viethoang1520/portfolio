@@ -3,7 +3,7 @@ import { Row, Col } from 'antd'
 export default function DefaultLayout() {
   return (
     <div>
-      <Row>
+      <Row className='layout-block'>
         <Col>
         </Col>
         <Col>
