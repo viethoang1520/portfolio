@@ -33,7 +33,7 @@ function Header() {
       </div>
 
       <div className='mobile-button'>
-        <button>Open</button>
+        <Icon icon="material-symbols:menu-rounded" width="32" height="32" />
       </div>
     </header>
 

@@ -16,6 +16,8 @@
 
   .mobile-button {
     display: none;
+    cursor: pointer;
+    user-select: none;
   }
 
   .logo-block {
