@@ -36,9 +36,9 @@
         gap: 2.6rem;
 
         .lower-title {
-          .content{
+          .content {
             display: inline-block;
-            padding: 0 10px 0 0 ;
+            padding: 0 10px 0 0;
           }
         }
 
@@ -46,7 +46,7 @@
           font-size: 40px;
           line-height: 33px;
           font-weight: 700;
-          
+
           &.style {
             color: #ffc200;
           }
@@ -63,17 +63,26 @@
           color: #b7b5b5;
           word-spacing: 4px;
           opacity: 0.85;
-          text-align: justify;   
+          text-align: justify;
         }
       }
     }
   }
 
   @media screen and (max-width: 1040px) {
-    .image-block{
-      display: block;
+    .responsive-image-col {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+
+      // .responsive-image {
+      //   width: 100% !important;
+      //   max-width: 100% !important;
+      //   height: auto !important;
+      // }
     }
   }
+
   @media screen and (max-width: 992px) {
     .introduction {
       margin: 20px 0;

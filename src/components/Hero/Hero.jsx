@@ -8,9 +8,9 @@ function Hero() {
   return (
     <div id='home' className="hero">
       <Row className='container hero-block'>
-        <Col data-aos="fade-up" data-aos-delay="100" sm={24} md={24} lg={12} xl={12} className='image-block'>
+        <Col data-aos="fade-up" data-aos-delay="100" sm={24} md={24} lg={12} xl={12} className='image-block responsive-image-col'>
           <Image
-            className='avatar-image'
+            className='avatar-image responsive-image'
             preview={false}
             width={600}
             src={image}
