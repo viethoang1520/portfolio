@@ -2,7 +2,7 @@ const projects = [
   {
     name: "Heally",
     description: "Heally is a website that helps people connect and chat with strangers randomly",
-    techs: ["ReactJS", "NodeJS", "Socket.io", "MongoDB"], 
+    techs: ["ReactJS", "Tanstack Query", "NodeJS", "Socket.io", "MongoDB"], 
     github: "https://github.com/heally",
     link: "https://www.facebook.com/"
   },
