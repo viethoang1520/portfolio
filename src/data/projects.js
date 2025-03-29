@@ -9,7 +9,7 @@ const projects = [
   {
     name: "Portfolio",
     description: "A React-based portfolio which is written using ReactJS, Ant Design, and SCSS",
-    techs: ["ReactJS", "NodeJS", "Ant Design", "SCSS"],
+    techs: ["ReactJS", "NodeJS", "Redux", "Ant Design", "SCSS"],
     github: "https://github.com/portfolio",
     link: "https://viethoang.vercel.app/"
   },
