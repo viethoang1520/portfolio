@@ -4,7 +4,7 @@ const projects = [
     description: "Heally is a website that helps people connect and chat with strangers randomly",
     techs: ["ReactJS", "Tanstack Query", "NodeJS", "Socket.io", "MongoDB"], 
     github: "https://github.com/heally",
-    link: "https:///"
+    link: "https://www.facebook.com/"
   },
   {
     name: "Portfolio",
@@ -17,7 +17,7 @@ const projects = [
     name: "FPT Mentor",
     description: " FPT Mentor is a web platform that connects students with mentors to help them complete their SWP391 projects",
     techs: ["ReactJS", "NodeJS", "GitHub"],
-    github: "https://github.com/fpt-mentor",
+    github: "https://github.com/",
     link: "https://www.facebook.com/"
   },
   {
