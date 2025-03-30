@@ -17,8 +17,8 @@ const projects = [
     name: "FPT Mentor",
     description: " FPT Mentor is a web platform that connects students with mentors to help them complete their SWP391 projects",
     techs: ["ReactJS", "NodeJS", "GitHub"],
-    github: "https://github.com/fpt-mentor-backend",
-    link: "https://www.facebook/"
+    github: "https://github.com/fpt-mentor",
+    link: "https://www.facebook.com/"
   },
   {
     name: "Alcohol E-commerce Website",
