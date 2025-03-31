@@ -3,7 +3,7 @@ const skills = [
     id: 1,
     name: "C",
     exp: "4 months",
-    icon: "devicon-plain:c"  // Replace with actual SVG or icon path
+    icon: "devicon-plain:c" 
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const skills = [
   {
     id: 3,
     name: "JavaScript",
-    exp: "1 year",
+    exp: "2 years",
     icon: "fa6-brands:js"
   },
   {
