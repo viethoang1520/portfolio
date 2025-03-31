@@ -17,6 +17,5 @@ A modern, responsive portfolio website built with React, showcasing skills, proj
 - React
 - Ant Design
 - SCSS
-- React Router DOM
 - Iconify
 - Vite
