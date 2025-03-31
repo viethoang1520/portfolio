@@ -20,7 +20,7 @@ const skills = [
   {
     id: 4,
     name: "HTML/CSS",
-    exp: "4 months",
+    exp: "2 years",
     icon: "fontisto:html5"
   },
   {
