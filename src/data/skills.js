@@ -49,7 +49,7 @@ const skills = [
   },
   {
     id: 9,
-    name: "MSSQL",
+    name: "MSSQL Server",
     exp: "9 months",
     icon: "devicon-plain:microsoftsqlserver"
   },
