@@ -32,7 +32,7 @@ const skills = [
   {
     id: 6,
     name: "ExpressJS",
-    exp: "1 years",
+    exp: "2 years",
     icon: "teenyicons:nodejs-outline"
   },
   {
