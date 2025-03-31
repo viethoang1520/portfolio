@@ -4,7 +4,7 @@ export default function DefaultLayout() {
   return (
     <div>
       <Row className='layout-block'>
-        <Col xs={24} md={12}>
+        <Col xs={24} md={12} lg={12}>
         </Col>
         <Col>
         </Col>
