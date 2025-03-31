@@ -56,13 +56,13 @@ const skills = [
   {
     id: 10,
     name: "MySQL",
-    exp: "1 year",
+    exp: "2 years",
     icon: "grommet-icons:mysql"
   },
   {
     id: 11,
     name: "MongoDB",
-    exp: "6 months",
+    exp: "1 year",
     icon: "simple-icons:mongodb"
   },
   {
