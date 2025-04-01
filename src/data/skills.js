@@ -68,7 +68,7 @@ const skills = [
   {
     id: 12,
     name: "GitHub",
-    exp: "1 year",
+    exp: "1.5 year",
     icon: "ant-design:github-filled"
   }
 ];
