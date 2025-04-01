@@ -26,7 +26,7 @@ const skills = [
   {
     id: 5,
     name: "TypeScript",
-    exp: "4 months",
+    exp: "6 months",
     icon: "akar-icons:typescript-fill"
   },
   {
