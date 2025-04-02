@@ -4,7 +4,7 @@ const projects = [
     description: "Heally is a website that helps people connect and chat with strangers randomly",
     techs: ["ReactJS", "Tanstack Query", "NodeJS", "Socket.io", "MongoDB"], 
     github: "https://github.com/heally",
-    link: "https://www.facebook.com/"
+    link: "https://www.facebook/"
   },
   {
     name: "Portfolio",
