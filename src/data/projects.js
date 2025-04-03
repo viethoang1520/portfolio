@@ -23,7 +23,7 @@ const projects = [
   {
     name: "Alcohol E-commerce Website",
     description: "A website that for selling branding alcohols",
-    techs: ["ReactJS", "NestJS", "Redux", ""],
+    techs: ["ReactJS", "NestJS", "Redux", "GitHub"],
     github: "https://github.com/alcohol-website",
     link: "https://hoangduong.vercel.app/"
   },
