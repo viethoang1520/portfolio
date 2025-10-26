@@ -1,6 +1,6 @@
-.header {
+.header-wrapper {
   display: flex;
-  padding: 0 50px;
+  // padding: 0 100px;
   justify-content: space-between;
   align-items: center;
   height: 70px;
@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 1px 5px rgb(61, 61, 61);
+  // box-shadow: 0 1px 5px rgb(61, 61, 61);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
 
@@ -21,26 +21,24 @@
   .logo-block {
     user-select: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     width: 10%;
   }
 
   .navbar-list {
     display: flex;
-    gap: 60px;
+    gap: 67px;
 
     a {
       text-decoration: none;
       color: #fff;
       font-size: 16px;
-      font-weight: 500;
     }
 
     .navbar-items {
       user-select: none;
       &.active {
         color: #ffd700;
-        font-weight: 700;
       }
 
       &:hover {

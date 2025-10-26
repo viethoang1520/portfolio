@@ -15,25 +15,27 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="logo-block">
-       Portfolio.
-      </div>
-      <ul className="navbar-list">
-        <a href='#home'><li className={`navbar-items ${navbarSelected === 'Home' ? 'active' : ''}`} onClick={() => setNavbarSelected('Home')}>Home</li></a>
-        <a href='#skill'><li className={`navbar-items ${navbarSelected === 'Skills' ? 'active' : ''}`} onClick={() => setNavbarSelected('Skills')}>Skills</li></a>
-        <a href='#project'><li className={`navbar-items ${navbarSelected === 'Projects' ? 'active' : ''}`} onClick={() => setNavbarSelected('Projects')}>Projects</li></a>
-        <a href='#contact'><li className={`navbar-items ${navbarSelected === 'Contact' ? 'active' : ''}`} onClick={() => setNavbarSelected('Contact')}>Contact</li></a>
-      </ul>
-      <div onClick={handleToggle} className="right-block">
-        {theme === 'light-theme' ?(
-          <Icon className='toggle-icon' icon="material-symbols:light-mode" width="25" height="25" />
-        ) : (
-          <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
-        )}
-      </div>
+      <div className="container header-wrapper">
+        <div className="logo-block">
+          Portfolio.
+        </div>
+        <ul className="navbar-list">
+          <a href='#home'><li className={`navbar-items ${navbarSelected === 'Home' ? 'active' : ''}`} onClick={() => setNavbarSelected('Home')}>Home</li></a>
+          <a href='#skill'><li className={`navbar-items ${navbarSelected === 'Skills' ? 'active' : ''}`} onClick={() => setNavbarSelected('Skills')}>Skills</li></a>
+          <a href='#project'><li className={`navbar-items ${navbarSelected === 'Projects' ? 'active' : ''}`} onClick={() => setNavbarSelected('Projects')}>Projects</li></a>
+          <a href='#contact'><li className={`navbar-items ${navbarSelected === 'Contact' ? 'active' : ''}`} onClick={() => setNavbarSelected('Contact')}>Contact</li></a>
+        </ul>
+        <div onClick={handleToggle} className="right-block">
+          {theme === 'light-theme' ? (
+            <Icon className='toggle-icon' icon="material-symbols:light-mode" width="25" height="25" />
+          ) : (
+            <Icon className='toggle-icon' icon="material-symbols:dark-mode" width="25" height="25" />
+          )}
+        </div>
 
-      <div className='mobile-button'>
-        <Icon icon="material-symbols:menu-rounded" width="32" height="32" />
+        <div className='mobile-button'>
+          <Icon icon="material-symbols:menu-rounded" width="32" height="32" />
+        </div>
       </div>
     </header>
 
