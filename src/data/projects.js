@@ -1,89 +1,89 @@
-import heallyImage from '@/assets/images/portfolio.png'
-import portfolioImage from '@/assets/images/avatar.jpg'
-import mentorImage from '@/assets/images/github-logo.png'
-import alcoholImage from '@/assets/images/hoangduong.jpg'
+import artchainImage from '@/assets/images/artchain.jpg'
+import portfolioImage from '@/assets/images/portfolio.jpg'
+import wineImage from '@/assets/images/wine.jpg'
+import metroImage from '@/assets/images/metro.jpg'
 
 const projects = [
   {
-    name: "Heally",
-    tagline: "Realtime stranger chat with safety-first matching and presence intelligence.",
-    problem: "Random chat apps feel unreliable, with high drop-off and no trust signals.",
-    solution: "Built a realtime platform with verified rooms, trust badges, and moderation insights.",
-    techs: ["React", "TanStack Query", "Node.js", "Socket.io", "MongoDB"],
+    name: "ArtChain",
+    tagline: "A digital art competition platform built for large-scale contest management workflows.",
+    problem: "Art competitions often lack centralized management systems.",
+    solution: "Built a fullstack platform for submissions, judging, and contest management.",
+    techs: ["React", "Node.js", "NestJS", "PostgreSQL", "Docker"],
     architecture: [
-      "Realtime gateway with room routing",
-      "Event-driven moderation pipeline",
-      "MongoDB change streams for activity feeds"
+      "Role-based backend architecture",
+      "RESTful APIs for contest management workflows",
+      "Modular fullstack system with scalable structure"
     ],
-    outcome: "Reduced match latency to under 200ms and increased session depth by 34%.",
-    badges: ["Fullstack App", "Realtime System", "Production Ready"],
-    status: "Live",
-    stats: { stars: "128", forks: "24" },
-    github: "https://github.com/heally",
-    link: "https://www.facebook.com/",
-    image: heallyImage,
-    imageAlt: "Heally realtime chat preview"
+    outcome: "Successfully delivered as a software engineering capstone project with production-oriented architecture and team collaboration.",
+    badges: ["Capstone Project", "Fullstack System", "Backend Architecture", "NFT"],
+    status: "Completed",
+    stats: { stars: "Academic", forks: "Team Project" },
+    github: "https://github.com/",
+    link: "https://artchain.io.vn/",
+    image: artchainImage,
+    imageAlt: "ArtChain platform preview"
   },
   {
     name: "Portfolio",
-    tagline: "A premium developer portfolio experience with cinematic storytelling.",
-    problem: "Generic templates fail to communicate engineering depth and craft.",
-    solution: "Designed a product-grade experience with cinematic layout, motion, and narrative.",
-    techs: ["React", "Vite", "Framer Motion", "SCSS", "Redux"],
+    tagline: "A modern developer portfolio focused on backend engineering and product presentation.",
+    problem: "Many portfolios lack technical identity.",
+    solution: "Built a modern portfolio with clean UI and scalable structure.",
+    techs: ["React", "Vite", "Framer Motion", "SCSS"],
     architecture: [
-      "Component-driven layout system",
-      "Motion choreography with reduced-motion fallbacks",
-      "Asset pipeline optimized for fast hero loads"
+      "Reusable component-based architecture",
+      "Responsive layouts with smooth motion design",
+      "Optimized frontend structure and asset management"
     ],
     outcome: "Improved recruiter engagement and clarity of technical positioning.",
     badges: ["Design System", "Brand Story", "Frontend Focus"],
     status: "Live",
-    stats: { stars: "56", forks: "12" },
-    github: "https://github.com/portfolio",
+    stats: { stars: "0", forks: "0" },
+    github: "https://github.com/viethoang1520/portfolio",
     link: "https://viethoang.vercel.app/",
     image: portfolioImage,
     imageAlt: "Portfolio hero preview"
   },
   {
-    name: "FPT Mentor",
-    tagline: "Mentor matchmaking platform to accelerate capstone delivery.",
-    problem: "Students lacked structured mentorship and clear project milestones.",
-    solution: "Created a mentor marketplace with milestone tracking and progress analytics.",
-    techs: ["React", "Node.js", "REST", "GitHub"],
+    name: "Winestore",
+    tagline: "An e-commerce web application for browsing and exploring wine products.",
+    problem: "Many shopping UIs lack modern browsing experiences.",
+    solution: "Built a responsive product browsing platform with API-driven rendering.",
+    techs: ["React", "SCSS", "Zustand", "REST API"],
     architecture: [
-      "Role-based access with mentor workflows",
-      "Milestone-driven project tracking",
-      "Analytics dashboard for cohort health"
+      "Centralized client-side state management",
+      "Component-based product browsing system",
+      "API-driven product fetching architecture"
     ],
-    outcome: "Mentor response time dropped by 42% in pilot cohorts.",
-    badges: ["EdTech", "Fullstack App"],
-    status: "Beta",
-    stats: { stars: "31", forks: "8" },
+    outcome: "Delivered a scalable frontend foundation for product listing and shopping experiences.",
+    badges: ["Frontend Project", "E-commerce UI", "Responsive Design"],
+    status: "Completed",
+    stats: { stars: "Personal", forks: "Frontend" },
     github: "https://github.com/",
-    link: "https://www.facebook.com/",
-    image: mentorImage,
-    imageAlt: "FPT Mentor platform preview"
+    link: "https://hoangduong.vercel.app/",
+    image: wineImage,
+    imageAlt: "WineStore e-commerce preview"
   },
   {
-    name: "Alcohol E-commerce",
-    tagline: "Luxury alcohol marketplace with curated discovery and checkout flow.",
-    problem: "Legacy store flows felt dated and made premium brands look generic.",
-    solution: "Reimagined the storefront with premium merchandising and streamlined checkout.",
-    techs: ["React", "NestJS", "Redux", "Payments"],
+    name: "Metro Ticketing System",
+    tagline: "A digital ticket booking platform for the Ben Thanh - Suoi Tien metro line.",
+    problem: "Traditional ticket booking systems often lack digital convenience.",
+    solution: "Built a responsive platform for online metro ticket booking.",
+    techs: ["React", "TypeScript", "TailwindCSS", "React Router", "Shadcn UI"],
     architecture: [
-      "Catalog service with elastic search",
-      "Checkout orchestration with payment webhooks",
-      "Content-driven landing modules"
+      "Component-based frontend architecture",
+      "Responsive ticket purchasing workflows",
+      "Reusable UI system with modern design patterns"
     ],
-    outcome: "Checkout completion improved by 21% after the redesign.",
-    badges: ["E-commerce", "Production Ready"],
-    status: "Live",
-    stats: { stars: "74", forks: "19" },
-    github: "https://github.com/alcohol-website",
-    link: "https://hoangduong.vercel.app/",
-    image: alcoholImage,
-    imageAlt: "Alcohol e-commerce preview"
-  }
+    outcome: "Delivered a modern metro ticket booking experience with scalable frontend structure and clean user flows.",
+    badges: ["Frontend Project", "Ticketing System", "Responsive UI"],
+    status: "Completed",
+    stats: { stars: "Personal", forks: "Frontend" },
+    github: "https://github.com/viethoang1520/sdn-ui",
+    link: "https://sdn-ui-five.vercel.app/",
+    image: metroImage,
+    imageAlt: "Metro ticketing platform preview"
+  },
 ]
 
 export default projects

@@ -7,7 +7,7 @@ function Project() {
       <div className="container">
         <div className="section-heading">
           <span className="section-kicker">Featured Products</span>
-          <h2>Visual-first case studies with real engineering depth</h2>
+          <h2>Real-world projects with backend engineering focus</h2>
           <p>
             Each project is presented like a product launch: cinematic visuals up front,
             with the technical story revealed on hover.
