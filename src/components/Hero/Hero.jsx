@@ -45,7 +45,7 @@ function Hero({ children }) {
           </p>
           <div className="hero-actions">
             <a href="#project" className="hero-primary">
-              View selected work
+              View projects
               <Icon icon="material-symbols:arrow-right-alt-rounded" width="20" height="20" />
             </a>
             <Button
