@@ -1,4 +1,4 @@
-.desc-block{
+.desc-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,16 +7,40 @@
   padding: 50px 0;
   color: #fff;
   background-color: #18191b;
-  .title{
+
+  .title {
     font-size: 30px;
     font-weight: 600;
     padding: 0 0 12px 0;
   }
-  .content{
+
+  .content {
     width: 55%;
     color: #b7b5b5;
     line-height: 25px;
     font-size: 16px;
   }
-  
+
+}
+
+@media screen and (max-width: 768px) {
+  .desc-block {
+    padding: 40px 0;
+  }
+
+  .desc-block .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .desc-block .title {
+    font-size: 24px;
+  }
+
+  .desc-block .content {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+  }
 }

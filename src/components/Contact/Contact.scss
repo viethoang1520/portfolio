@@ -85,3 +85,45 @@
     padding: 14px 28px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .contact-block {
+    padding: 100px 0 110px;
+  }
+
+  .contact-block .contact {
+    padding: 32px;
+  }
+
+  .contact-block .contact-title {
+    font-size: 22px;
+  }
+
+  .contact-block .contact-title-line {
+    width: 60px;
+  }
+
+  .contact-block .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-block {
+    padding: 90px 0 100px;
+  }
+
+  .contact-block .contact {
+    padding: 24px;
+  }
+
+  .contact-block .input-block {
+    padding-bottom: 20px;
+  }
+
+  .contact-block .contact-title {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

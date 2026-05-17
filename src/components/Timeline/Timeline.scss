@@ -200,4 +200,42 @@
       padding-left: 38px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0 110px;
+
+    .section-heading {
+      text-align: center;
+      align-items: center;
+    }
+
+    .timeline-line {
+      left: 10px;
+    }
+
+    .timeline-item {
+      padding-left: 32px;
+    }
+
+    .timeline-card {
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 90px 0 100px;
+
+    .timeline-top span {
+      font-size: 11px;
+    }
+
+    .timeline-role h3 {
+      font-size: 14px;
+    }
+
+    .timeline-summary,
+    .timeline-highlights li {
+      font-size: 12px;
+    }
+  }
 }

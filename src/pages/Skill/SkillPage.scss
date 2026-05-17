@@ -90,4 +90,36 @@
   @media screen and (max-width: 1200px) {
     padding: 90px 0 100px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 90px 0;
+
+    .section-heading {
+      align-items: center;
+      text-align: center;
+    }
+
+    .section-tags {
+      justify-content: center;
+    }
+
+    .skill-size-icon {
+      padding-top: 12px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 80px 0;
+
+    .section-heading h2 {
+      font-size: clamp(2.1rem, 7vw, 2.6rem);
+    }
+
+    .skill-collapse-icon,
+    .skill-expand-icon {
+      font-size: 30px;
+      width: 42px;
+      height: 42px;
+    }
+  }
 }

@@ -10,6 +10,16 @@ function Header() {
   };
   const theme = useSelector((state) => state.theme.theme);
   const [navbarSelected, setNavbarSelected] = useState('Home');
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
+  const handleMobileToggle = () => {
+    setIsMobileOpen((prev) => !prev);
+  };
+
+  const handleMobileNav = (label) => {
+    setNavbarSelected(label);
+    setIsMobileOpen(false);
+  };
 
   return (
     <header className="header">
@@ -70,9 +80,69 @@ function Header() {
           </a>
         </div>
 
-        <button className='mobile-button' type="button" aria-label="Open menu">
-          <Icon icon="material-symbols:menu-rounded" width="28" height="28" />
+        <button
+          className='mobile-button'
+          type="button"
+          aria-label={isMobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMobileOpen}
+          aria-controls="mobile-nav"
+          onClick={handleMobileToggle}
+        >
+          <Icon icon={isMobileOpen ? 'material-symbols:close-rounded' : 'material-symbols:menu-rounded'} width="28" height="28" />
         </button>
+      </div>
+      <div className={`mobile-menu ${isMobileOpen ? 'is-open' : ''}`} role="dialog" aria-modal="true">
+        <div className="mobile-menu-surface">
+          <div className="mobile-menu-header">
+            <span className="logo-block">Viet Hoang</span>
+            <button type="button" className="mobile-close" aria-label="Close menu" onClick={handleMobileToggle}>
+              <Icon icon="material-symbols:close-rounded" width="24" height="24" />
+            </button>
+          </div>
+          <nav id="mobile-nav" className="mobile-nav" aria-label="Mobile">
+            <a
+              className={`mobile-link ${navbarSelected === 'Home' ? 'active' : ''}`}
+              href="#home"
+              onClick={() => handleMobileNav('Home')}
+            >
+              Home
+            </a>
+            <a
+              className={`mobile-link ${navbarSelected === 'Skills' ? 'active' : ''}`}
+              href="#skill"
+              onClick={() => handleMobileNav('Skills')}
+            >
+              Skills
+            </a>
+            <a
+              className={`mobile-link ${navbarSelected === 'Experience' ? 'active' : ''}`}
+              href="#experience"
+              onClick={() => handleMobileNav('Experience')}
+            >
+              Experience
+            </a>
+            <a
+              className={`mobile-link ${navbarSelected === 'Projects' ? 'active' : ''}`}
+              href="#project"
+              onClick={() => handleMobileNav('Projects')}
+            >
+              Projects
+            </a>
+            <a
+              className={`mobile-link ${navbarSelected === 'Contact' ? 'active' : ''}`}
+              href="#contact"
+              onClick={() => handleMobileNav('Contact')}
+            >
+              Contact
+            </a>
+          </nav>
+          <div className="mobile-cta">
+            <a className="header-cta" href="#contact" onClick={() => handleMobileNav('Contact')}>
+              Let's talk
+              <Icon icon="material-symbols:arrow-right-alt-rounded" width="18" height="18" />
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 

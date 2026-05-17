@@ -46,3 +46,11 @@
     color: #f6c453;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .footer-block .footer-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

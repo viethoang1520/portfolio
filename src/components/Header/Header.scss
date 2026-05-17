@@ -9,7 +9,8 @@
   width: 100%;
   z-index: 1000;
   padding: 16px 0 8px;
-.header-wrapper {
+
+  .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,3 +176,116 @@
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 990;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 16px 24px;
+  background: rgba(6, 7, 10, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-surface {
+  width: min(480px, 100%);
+  background: rgba(18, 19, 22, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transform: translateY(-10px);
+  transition: transform 0.25s ease;
+}
+
+.mobile-menu.is-open .mobile-menu-surface {
+  transform: translateY(0);
+}
+
+.mobile-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.mobile-close {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.mobile-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s ease;
+}
+
+.mobile-link:hover,
+.mobile-link.active {
+  color: #f6c453;
+  border-color: rgba(246, 196, 83, 0.4);
+  background: rgba(246, 196, 83, 0.08);
+}
+
+.mobile-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+@media screen and (min-width: 993px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 12px 0 6px;
+  }
+
+  .header .header-wrapper {
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 14px;
+  }
+
+  .header .header-wrapper .logo-block {
+    font-size: 14px;
+  }
+
+  .header .header-wrapper .mobile-button {
+    width: 34px;
+    height: 34px;
+  }
+}
