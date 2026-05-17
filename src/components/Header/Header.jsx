@@ -6,7 +6,7 @@ import { toggle } from '@/store/theme/themeSlice'
 function Header() {
   const dispatch = useDispatch();
   const handleToggle = () => {
-    dispatch(toggle());
+    // dispatch(toggle());
   };
   const theme = useSelector((state) => state.theme.theme);
   const [navbarSelected, setNavbarSelected] = useState('Home');
