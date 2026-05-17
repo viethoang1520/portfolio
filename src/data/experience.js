@@ -1,51 +1,39 @@
 const experience = [
   {
-    role: "Backend Engineer Intern",
+    role: "Backend Developer Intern",
     company: "FPT Software",
-    period: "2024",
+    period: "2026 - Present",
     summary: "Worked on applied AI systems and backend services for enterprise workflows.",
     highlights: [
       "Built a RAG pipeline for internal knowledge retrieval",
       "Designed intent-based agents for workflow automation",
       "Integrated vector search with monitoring dashboards"
     ],
-    stack: ["Node.js", "Python", "LangChain", "PostgreSQL", "Azure"]
+    stack: ["FastAPI", "Python", ".NET", "PostgreSQL", "AWS"]
   },
   {
-    role: "Backend Engineer",
-    company: "Freelance / Client Projects",
-    period: "2023 - Present",
-    summary: "Lead backend architecture, realtime services, and data pipelines for production apps.",
+    role: "Backend Developer Intern",
+    company: "FPT Software",
+    period: "2023 (4 months)",
+    summary: "Developed RESTful APIs, backend modules, and AI-integrated services for web applications.",
     highlights: [
-      "Owned API design and event-driven services",
-      "Built realtime gateways with observability",
-      "Shipped cloud deployments with CI/CD"
+      "Built RESTful APIs using Node.js",
+      "Assisted Docker-based deployments",
+      "Integrated AI Agent chatbot systems"
     ],
-    stack: ["Node.js", "MongoDB", "Redis", "Docker", "AWS"]
+    stack: ["Node.js", "Docker", "AI Agent", "Swarm", "REST API"]
   },
   {
-    role: "Fullstack Developer",
-    company: "Academic + Startup Teams",
-    period: "2022 - 2023",
-    summary: "Built MVPs with end-to-end delivery, from UX flows to backend orchestration.",
-    highlights: [
-      "Delivered MVPs across web and mobile",
-      "Implemented shared UI systems",
-      "Instrumented monitoring and analytics"
-    ],
-    stack: ["React", "Node.js", "PostgreSQL", "Vercel", "Sentry"]
-  },
-  {
-    role: "Computer Science Student",
+    role: "Software Engineering Student",
     company: "FPT University",
-    period: "2020 - 2024",
-    summary: "Focused on software engineering fundamentals, distributed systems, and product thinking.",
+    period: "2022 - 2026",
+    summary: "Focused on backend development with specialization in Node.js and modern web technologies.",
     highlights: [
-      "Studied distributed systems and system design",
-      "Built capstone projects with agile teams",
-      "Strengthened algorithmic foundations"
+      "Specialized in Node.js backend development",
+      "Built fullstack and capstone projects",
+      "Strengthened backend architecture skills"
     ],
-    stack: ["Java", "Python", "System Design", "Algorithms", "Git"]
+    stack: ["Java", "JavaScript", "System Design", "Algorithms", "Git"]
   }
 ]
 
