@@ -6,12 +6,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { showAllSkills, collapseSkills } from '@/store/skill/skillSlice';
 import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 function SkillPage() {
   const dispatch = useDispatch();
   const showAll = useSelector((state) => state.skill.showAll);
   const [skills, setSkills] = useState(originalSkills.slice(0, 8));
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     if (showAll) {
@@ -21,14 +22,14 @@ function SkillPage() {
     }
   }, [showAll]);
 
-  const handleShowAllSkills = () => { 
+  const handleShowAllSkills = () => {
     dispatch(showAllSkills(originalSkills));
     setTimeout(() => {
       const skillSection = document.getElementById('skill');
       if (skillSection) {
         const sectionBottom = skillSection.getBoundingClientRect().bottom;
         window.scrollBy({
-          top: sectionBottom - window.innerHeight + 100, 
+          top: sectionBottom - window.innerHeight + 100,
           behavior: 'smooth'
         });
       }
@@ -41,25 +42,33 @@ function SkillPage() {
       const skillSection = document.getElementById('skill');
       if (skillSection) {
         // Scroll to the top of the skill section
-        skillSection.scrollIntoView({ 
+        skillSection.scrollIntoView({
           behavior: 'smooth',
           block: 'start' // Align the top of the element with the top of the viewport
         });
       }
     }, 100);
   }
-  
+
   return (
     <div className="skill-block" id='skill'>
       <div className="container">
-        <h1 className="skill-title">
-          <p data-aos="zoom-in-up">Tech stack I'm currently working with</p>
-          <div data-aos="zoom-in-up" data-aos-delay={`100`} className="skill-title-underline">
-            <div className="skill-title-underline-line"></div>
+        <div className="section-heading">
+          <span className="section-kicker">Skills</span>
+          <h2>Backend stack for real products</h2>
+          <p>
+            A curated toolkit centered on Node.js, distributed systems, and modern product
+            delivery workflows.
+          </p>
+          <div className="section-tags">
+            <span>Node.js</span>
+            <span>NestJS</span>
+            <span>Realtime APIs</span>
+            <span>Cloud Observability</span>
           </div>
-        </h1>
-        
-        <Row gutter={[16, 16]} className="skill">
+        </div>
+
+        <Row gutter={[16, 16]} className="skill-grid">
           {skills.map((skill) => (
             <Col data-aos="zoom-in-up" data-aos-delay={`${skill.id}00`} key={skill.id} xs={24} sm={24} md={12} lg={12} xl={6}>
               <SkillCard
@@ -73,12 +82,11 @@ function SkillPage() {
             {showAll ? (
               <motion.div
                 animate={{
-                  y: [0, 10, 0],
+                  y: shouldReduceMotion ? 0 : [0, 8, 0],
                   transition: {
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                  },
+                    duration: shouldReduceMotion ? 0 : 1.6,
+                    repeat: 0,
+                  }
                 }}
               >
                 <Icon
@@ -88,17 +96,15 @@ function SkillPage() {
                 />
               </motion.div>
             ) : (
-                <motion.div
-                  animate={{
-                    // Move vertically: start at 0, go up -10px, return to 0
-                    y: [0, -10, 0],
-                    transition: {
-                      duration: 2, // Animation takes 2 seconds
-                      repeat: Infinity, // Repeat forever
-                      repeatType: "reverse", // When animation reaches end, it reverses direction back to start, creating a smooth back-and-forth motion
-                    },
-                  }}
-                >
+              <motion.div
+                animate={{
+                  y: shouldReduceMotion ? 0 : [0, -8, 0],
+                  transition: {
+                    duration: shouldReduceMotion ? 0 : 1.6,
+                    repeat: 0,
+                  }
+                }}
+              >
                 <Icon
                   onClick={handleShowAllSkills}
                   className={"skill-expand-icon"}
@@ -106,7 +112,7 @@ function SkillPage() {
                 />
               </motion.div>
             )
-          }
+            }
           </div>
         </Row>
       </div>

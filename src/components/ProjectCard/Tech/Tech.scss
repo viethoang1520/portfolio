@@ -1,12 +1,16 @@
-.tech-container{
-  .tech-item{
-    padding: 6px 10px;
-    border-radius: 15px;
-    background-color: #ffd700;
-    p{
-      font-size: 14px;
+.tech-container {
+  .tech-item {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(246, 196, 83, 0.12);
+    border: 1px solid rgba(246, 196, 83, 0.35);
+    box-shadow: 0 0 12px rgba(246, 196, 83, 0.2);
+
+    p {
+      font-size: 12px;
       font-weight: 600;
-      color: #434448;
+      color: #f6c453;
+      letter-spacing: 0.2px;
     }
   }
 }

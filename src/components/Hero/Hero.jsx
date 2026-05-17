@@ -1,38 +1,112 @@
-import { Row, Col } from 'antd'
+import { motion, useReducedMotion } from 'framer-motion'
+import { Icon } from '@iconify/react/dist/iconify.js'
 import './Hero.scss'
 import Button from '@/components/Button/Button.jsx'
-import { Image } from 'antd';
 import image from '@/assets/images/avatar.jpg'
 import cv from '@/assets/cv.pdf'
-function Hero() {
+import { div } from 'framer-motion/client'
+function Hero({ children }) {
+  const shouldReduceMotion = useReducedMotion()
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0 }
+  }
+
   return (
-    <div id='home' className="hero">
-      <Row className='container hero-block'>
-        <Col data-aos="fade-up" data-aos-delay="100" sm={24} md={24} lg={12} xl={12} className='image-block responsive-image-col'>
-          <Image
-            className='avatar-image responsive-image'
-            preview={false}
-            width={600}
-            src={image}
-          />
-        </Col>
-        <Col data-aos="fade-up" data-aos-delay="200" sm={24} md={24} lg={12} xl={12} className="introduction">
-          <div className="title-block">
-            <h1 className='content upper-title'>Hi👋 I'm Viet Hoang</h1>
-            <h1 className="lower-title">
-              <p className='content style'>Back-end</p>
-              <p className='content lower-title'> Developer</p>
-            </h1>
+
+    <section id='home' className="hero">
+      <div className="hero-background" aria-hidden="true">
+        <span className="hero-orb orb-1"></span>
+        <span className="hero-orb orb-2"></span>
+        <span className="hero-orb orb-3"></span>
+      </div>
+      <div className='container hero-grid'>
+        <motion.div
+          className='hero-text'
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: shouldReduceMotion ? 0 : 0.6, ease: 'easeOut' }}
+        >
+          <div className="hero-kicker">
+            <span className="hero-pill">Backend Developer</span>
+            <span className="hero-pill outline">Open to Work</span>
           </div>
-          <div className="description">
-            <h5 className="desc-content">"Welcome to my portfolio! My name is Viet Hoang, and I am currently a student at FPT University, where I am dedicated to expanding my knowledge and skills in various fields. I am always eager to learn and embrace new challenges, as I believe that personal growth comes from stepping outside of my comfort zone."</h5>
-          </div> 
-          <a className='download-cv' href={cv} download='Đinh Việt Hoàng-NodeJS_Devloper.pdf'>
-            <Button content='Download CV' width='175px' height='45px' icon='material-symbols:download' />
-          </a>
-        </Col>
-      </Row>
-    </div>
+          <h1 className="hero-title">
+            Building resilient systems
+            <span className="hero-highlight"> with cinematic polish</span>
+          </h1>
+          <p className="hero-subtitle">
+            I design and ship backend-first products with a focus on scalable architecture,
+            clean APIs, and premium user experiences. Every project here is treated like a
+            real product launch.
+          </p>
+          <div className="hero-actions">
+            <a href="#project" className="hero-primary">
+              View selected work
+              <Icon icon="material-symbols:arrow-right-alt-rounded" width="20" height="20" />
+            </a>
+            <Button
+              content='Download CV'
+              icon='material-symbols:download'
+              variant='ghost'
+              href={cv}
+              download='Dinh-Viet-Hoang-NodeJS-Developer.pdf'
+            />
+          </div>
+          <div className="hero-meta">
+            <div className="hero-stat">
+              <h4>6+</h4>
+              <span>Production projects</span>
+            </div>
+            <div className="hero-stat">
+              <h4>1</h4>
+              <span>Capstone project</span>
+            </div>
+            <div className="hero-stat">
+              <h4>2+</h4>
+              <span>Realtime systems</span>
+            </div>
+          </div>
+          <div className="hero-social">
+            <a href="https://github.com/viethoang1520/" aria-label="GitHub" target="_blank" rel="noreferrer">
+              <Icon icon="mdi:github" width="20" height="20" />
+              GitHub
+            </a>
+            <a href=" https://www.linkedin.com/in/hoang-dinh-viet-699385257" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <Icon icon="mdi:linkedin" width="20" height="20" />
+              LinkedIn
+            </a>
+            <a href="mailto:viethoang1520.dev@example.com" aria-label="Email" target="_blank" rel="noreferrer">
+              <Icon icon="material-symbols:mail-outline" width="20" height="20" />
+              Email
+            </a>
+          </div>
+        </motion.div>
+        <motion.div
+          className='hero-media'
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: shouldReduceMotion ? 0 : 0.7, ease: 'easeOut', delay: 0.1 }}
+        >
+          <div className="media-card">
+            <div className="media-frame">
+              <img src={image} alt="Portrait of Viet Hoang" />
+            </div>
+            <div className="media-glow"></div>
+            <div className="media-float">
+              <span className="float-pill">API Design</span>
+              <span className="float-pill">System Architecture</span>
+              <span className="float-pill">Realtime</span>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 }
 

@@ -22,40 +22,42 @@ $light-grey: #c2cbc9;
 
 .App {
   &.light-theme {
-    //text:
-    --text-primary: #333333;
-    --text-primary-contrast: #fff;
+    --text-primary: #0f172a;
+    --text-muted: #475569;
+    --text-primary-contrast: #ffffff;
 
-    //theme:
-    --theme-color-primary: #85dd74;
+    --theme-color-primary: #ffffff;
 
-    //background:
-    --bg-primary: #fff;
-    --bg-secondary: #EEEEEE;
-    --bg-primary-contrast: #242526;
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-primary-contrast: #0f172a;
 
-    //accent:
-    --accent-primary: #ffe38d;
-    --accent-primary-light: #ffe38d;
-    --accent-secondary: #6148aa;
-
-    //hover:
-
-    //status:
+    --accent-primary: #f5b32d;
+    --accent-primary-light: #ffe3a1;
+    --accent-secondary: #38bdf8;
+    --border-subtle: rgba(15, 23, 42, 0.12);
+    --glass-bg: rgba(255, 255, 255, 0.8);
   }
 
   &.dark-theme {
-    --text-primary: #F2F2F2;
-    --theme-color-primary: #171616;
-    --bg-primary: #242526;
-    --bg-secondary: #343536;
-    --accent-primary: #ffe38d;
+    --text-primary: #f8fafc;
+    --text-muted: rgba(248, 250, 252, 0.7);
+    --theme-color-primary: #0b0d12;
+    --bg-primary: #0b0d12;
+    --bg-secondary: #10131b;
+    --bg-elevated: #141821;
+    --accent-primary: #f6c453;
+    --accent-primary-light: rgba(246, 196, 83, 0.22);
+    --accent-secondary: #38bdf8;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(15, 17, 22, 0.7);
   }
 }
 
 $bg-primary: var(--bg-primary);
 $bg-secondary: var(--bg-secondary);
 $text-primary: var(--text-primary);
+$text-muted: var(--text-muted);
 //$text-secondary:
 //$text-muted:
 //$text-light:
@@ -69,6 +71,7 @@ $text-primary: var(--text-primary);
 //$border-muted
 
 $accent-primary: var(--accent-primary);
+$accent-secondary: var(--accent-secondary);
 //$accent-secondary
 //$accent-hover
 //$accent-active
